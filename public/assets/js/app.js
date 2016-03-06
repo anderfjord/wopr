@@ -295,8 +295,11 @@
      *
      */
     var reset = function (ev) {
-        console.log('RESET');
-        ev.preventDefault();
+        
+        if (ev && ev.preventDefault) {
+            ev.preventDefault();
+        }
+
         DOM.game.hide();
         $('#joshua-plays-himself').hide();
         $('#start-options').hide();
@@ -305,7 +308,7 @@
         embedAudioIntro();
         $('#menu').show();
         $('#mode-options').show();
-        type('.shall-we', '> Shall we play a game?', 85);
+        type('.shall-we', '> Shall we play a game?', 75);
     };
 
     /**
@@ -356,7 +359,7 @@
     /**
      * Event: start Joshua
      */
-    $('a[href="#start-joshua"]').on('click', function (ev) {
+    $('a[href="#joshua-plays-himself"]').on('click', function (ev) {
         ev.preventDefault();
 
         if (confirm('Are you sure? Joshua lacks all sense of human empathy, unless it\'s possible that he can learn...')) {
@@ -382,7 +385,7 @@
     });
 
     embedAudioIntro();
-    type('.shall-we', '> Shall we play a game?', 85);
+    reset();
 
     var setHeaderTimeout = function (selector, timeInterval) {
 
