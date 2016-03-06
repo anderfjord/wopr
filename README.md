@@ -33,3 +33,9 @@ This project was inspired by the Connect Four over WebRTC app developed by Mahmu
 https://github.com/hjr265/arteegee
 
 https://www.toptal.com/webrtc/taming-webrtc-with-peerjs
+
+The WarGames font was provided by Dustin Norlander of [Cheap Skate Fonts](http://www.cheapskatefonts.com/).
+
+The Geo font was provided by Ben Weiner of [Reading Type](https://readingtype.org.uk/).
+
+Certain audio files were provided by [Uncle Bubby](http://wavs.unclebubby.com/movies/drama/war-games/)
