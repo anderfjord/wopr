@@ -28,7 +28,7 @@ Open `coverage/lcov-report/index.html` in a browser
 Code coverage is generated using [Istanbul](https://www.npmjs.com/package/istanbul) in conjunction with [Mocha](https://mochajs.org/)
 
 ## Acknowledgements
-This project was inspired by the Connect Four WebRTC app developed by Mahmud Ridwan.
+This project was inspired by the Connect Four over WebRTC app developed by Mahmud Ridwan.
 
 https://github.com/hjr265/arteegee
 
