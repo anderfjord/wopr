@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "instances": 1,
+      "cron_restart": "0 */24 * * *",
+      "script": "./index.js",
+      "log_date_format": "YYYY-MM-DD",
+      "exec_mode": "cluster_mode",
+      "merge_logs": true,
+      "log_file": "/var/log/wopr/app.log",
+      "error_file": "/var/log/wopr/app.log",
+      "out_file": "/var/log/wopr/app.log",
+      "pid_file": "/var/run/wopr/app.pid",
+      "env": {
+        "PORT": 8080
+      }
+    }
+  ]
+}

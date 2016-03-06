@@ -29,5 +29,7 @@ Code coverage is generated using [Istanbul](https://www.npmjs.com/package/istanb
 
 ## Acknowledgements
 This project was inspired by the Connect Four WebRTC app developed by Mahmud Ridwan.
-(https://github.com/hjr265/arteegee)
-(https://www.toptal.com/webrtc/taming-webrtc-with-peerjs)
+
+https://github.com/hjr265/arteegee
+
+https://www.toptal.com/webrtc/taming-webrtc-with-peerjs
