@@ -38,4 +38,4 @@ The WarGames font was provided by Dustin Norlander of [Cheap Skate Fonts](http:/
 
 The Geo font was provided by Ben Weiner of [Reading Type](https://readingtype.org.uk/).
 
-Certain audio files were provided by [Uncle Bubby](http://wavs.unclebubby.com/movies/drama/war-games/)
+Audio files were provided by [Uncle Bubby](http://wavs.unclebubby.com/movies/drama/war-games/)
