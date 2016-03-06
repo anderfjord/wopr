@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+    head
+        title WOPR
+        meta(name='viewport' content='width=640px, initial-scale=1')
+
+        block styles
+            link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css')
+            link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css')
+            link(rel='stylesheet' href='/assets/css/app.css')
+    body
+        header
+            div.header-left
+                a.wopr-title.wargames
+                    span.wopr-1 W
+                    span.wopr-2 O
+                    span.wopr-3 P
+                    span.wopr-4 R
+                div.wopr-subtitle War Operations Plan Response
+
+            div.header-right
+                div(style='font-weight: bold;') DEFCON
+                div.defcon
+                    div.defcon-5.selected 5
+                    div.defcon-4 4
+                    div.defcon-3 3
+                    div.defcon-2 2
+                    div.defcon-1 1
+            
+        div.shall-we-play-a-game
+
+        section#menu
+            div
+                div
+                    h2.shall-we.wargames
+                    br
+                    div.no-support(style='display: none;')
+                        div.alert.alert-warning
+                            p Unfortunately, your web browser does not <a href="http://iswebrtcreadyyet.com">support WebRTC</a>
+                    
+                    div#mode-options
+                        a.btn.btn-primary.btn-lg(href='#play-a-friend') Play a friend
+                        | &nbsp;
+                        a.btn.btn-default.btn-lg(href='#joshua-plays-himself') Have Joshua play himself
+
+                    div#start-options
+                        div#play-a-friend(style='display: none;')
+                            a.btn.btn-primary.btn-lg(href='#start') Start
+                            | &nbsp;
+                            a.btn.btn-default.btn-lg(href='#join') Join
+
+                        div#joshua-plays-himself(style='display: none;')
+                            a.btn.btn-primary.btn-lg(href='#start-joshua') Unleash Joshua
+
+        section#game(style='display: none;')
+            div
+                h1.wargames Tic-Tac-Toe
+                br
+                div.alert.alert-info
+                    p
+                br
+                table.table.grid
+                    tbody
+                        for i in [0, 1, 2]
+                            tr
+                                for j in [0, 1, 2]
+                                    td
+                                        div.slot
+                    
+
+        block scripts
+            script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js')
+            script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js')
+            script(src='//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js')
+            script(src='//cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.14/peer.min.js')
+            script(src='/assets/js/app.js')

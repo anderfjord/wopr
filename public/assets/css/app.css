@@ -1,0 +1,167 @@
+@font-face {
+    font-family: wargames;
+    src: local(wargames), url('../../assets/fonts/wargames/WARGAMES.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: geo;
+    src: local(geo), url('../../assets/fonts/geo/Geo-Regular.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-family: Helvetica;
+}
+
+.wargames {
+    font-family: wargames;
+}
+
+header {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
+
+header .header-left {
+    float: left;
+    width: 400px;
+    font-size: 60px;
+    padding-left: 30px;
+}
+
+.wopr-title {
+    display: block;
+    color: #F7701D;
+    cursor: pointer;
+    margin: 0;
+    height: 70px;
+}
+
+a.wopr-title:hover {
+    color: #F7701D;
+    text-decoration: none;
+}
+
+.wopr-subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+header .header-right {
+    float: right;
+    width: 320px;
+    padding-right: 30px;
+    color: #F7701D;
+    /*border: 1px solid pink;*/
+}
+
+header .defcon {
+    float: right;
+    font-size: 40px;
+    width: 100%;
+    /*border: 1px solid pink;*/
+}
+
+header .defcon div {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+header .defcon .defcon-5 { color: blue; }
+header .defcon .defcon-4 { color: green; }
+header .defcon .defcon-3 { color: yellow; }
+header .defcon .defcon-2 { color: red; }
+header .defcon .defcon-1 { color: white; }
+
+header .defcon .defcon-5.selected { border: 3px solid blue; }
+header .defcon .defcon-4.selected { border: 3px solid green; }
+header .defcon .defcon-3.selected { border: 3px solid yellow; }
+header .defcon .defcon-2.selected { border: 3px solid red; }
+header .defcon .defcon-1.selected { border: 3px solid white; }
+
+h1, h2 {
+    color: #38ff1f;
+}
+
+.shall-we-play-a-game {
+    display: none;
+}
+
+#menu {
+    /*display: table;*/
+    width: 100%;
+    height: 100%;
+}
+#menu > div {
+    padding-top: 150px;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+#menu > div > div {
+    width: 450px;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+#game {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#game > div {
+    width: 450px;
+    margin: 0 auto 0;
+    text-align: left;
+}
+
+#game .grid td {
+    /*border: 10px solid #fff;*/
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+#game .grid td.hover {
+    background: #d7d7d7;
+}
+
+#game .grid tr:nth-child(1),
+#game .grid tr:nth-child(2) {
+    border-bottom: 15px solid #fff;
+}
+#game .grid tr:nth-child(1) td:nth-child(1),
+#game .grid tr:nth-child(1) td:nth-child(2),
+#game .grid tr:nth-child(2) td:nth-child(1),
+#game .grid tr:nth-child(2) td:nth-child(2),
+#game .grid tr:nth-child(3) td:nth-child(1),
+#game .grid tr:nth-child(3) td:nth-child(2) {
+    border-right: 15px solid #fff;
+}
+
+#game .grid .slot {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    line-height: 130px;
+    font-size: 130px;
+    font-weight: bold;
+}
+#game .grid .slot.filled {
+    font-family: geo;
+    content: ' X';
+}
+#game .grid .slot.filled-opponent {
+    font-family: geo;
+    content: 'O';
+}
+#game .grid.ended .slot:not(.highlight) {
+    opacity: 0.5;
+}
